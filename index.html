@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Landing Page</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section>
-        <header>
-            <a href="#"><img src="./img/Logo.webp" width="100" height="80" class="logo"></a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">what</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </header>
-        <div class="content">
-            <div class="textBox">
-                <h2>It's not just Coffee<br> It's <span>Starbuck</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, aut aliquam officiis soluta rerum iure laboriosam quo quia officia doloremque nisi fugiat vel adipisci ad atque fuga iste nulla cumque!</p>
-                <a href="#">Learn More</a>
+    <nav class="navbar">
+        <div class="logo">Monster</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Bem-vindo à Monster</h1>
+        <p>Explore nossos sabores!</p>
+        <div class="cans">
+            <div class="can" id="can1" onclick="changeFlavor('lime')">
+                <div class="can-title">Monster Energy Green</div>
             </div>
-            <div class="imgBox">
-                <img src="img/lata.png" alt="lata" class="starbuck">
+            <div class="can" id="can2" onclick="changeFlavor('orange')">
+                <div class="can-title">Monster Energy Orange</div>
+            </div>
+            <div class="can" id="can3" onclick="changeFlavor('red')">
+                <div class="can-title">Monster Energy Red</div>
             </div>
         </div>
-        <ul class="thumb">
-            <li><img src="img/lata - Copia.png" alt=""></li>
-            <li><img src="img/lata.zero - Copia.png" alt=""></li>
-        </ul>
-    </section>
+        <div class="flavor-description" id="flavorDescription"></div>
+    </main>
+    <script src="script.js"></script>
 </body>
-
 </html>
